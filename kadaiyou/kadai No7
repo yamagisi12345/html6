@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" inital-scale="1.0">
+        <titl>課題7</titl>
+        <link rel="stylesheet" href="style.css">
+    </head>
+        <body class="theme-blue">
+
+
+ <div class="profile-card">
+    <div class="speech-bubble">
+      こんにちは！👋
+    </div>
+    
+    <h2>課題7</h2>
+    
+    <p id="bio">初めまして</p>
+    <button id="toggleBioBtn">もっと見る</button>
+  </div>
+
+  <hr>
+
+  <h3>カラー変更</h3>
+  <button id="themeBlue">ブルー</button>
+  <button id="themeGreen">グリーン</button>
+  <button id="themePink">ピンク</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+CSS
+body {
+  font-family: sans-serif;
+  padding: 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.profile-card {
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 8px;
+  max-width: 400px;
+}
+
+button {
+  margin: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+
+.theme-blue {
+  background-color: #e0f7fa;
+  color: #006064;
+}
+
+.theme-green {
+  background-color: #e8f5e9;
+  color: #1b5e20;
+}
+
+.theme-pink {
+  background-color: #fce4ec;
+  color: #880e4f;
+}
+
+const bioText = document.getElementById('bio');
+const toggleBioBtn = document.getElementById('toggleBioBtn');
+
+const shortText = "初めまして";
+const fullText = "初めまして英語が苦手で作ってあるコードがわからないです。";
+
+toggleBioBtn.addEventListener('click', function() {
+  if (bioText.textContent === shortText) {
+    bioText.textContent = fullText;
+    toggleBioBtn.textContent = "閉じる";
+  } else {
+    bioText.textContent = shortText;
+    toggleBioBtn.textContent = "もっと見る";
+  }
+});
+
+
+const btnBlue = document.getElementById('themeBlue');
+const btnGreen = document.getElementById('themeGreen');
+const btnPink = document.getElementById('themePink');
+
+
+function clearThemes() {
+  document.body.classList.remove('theme-blue', 'theme-green', 'theme-pink');
+}
+
+btnBlue.addEventListener('click', function() {
+  clearThemes();
+  document.body.classList.add('theme-blue');
+});
+
+btnGreen.addEventListener('click', function() {
+  clearThemes();
+  document.body.classList.add('theme-green');
+});
+
+btnPink.addEventListener('click', function() {
+  clearThemes();
+  document.body.classList.add('theme-pink');
+});

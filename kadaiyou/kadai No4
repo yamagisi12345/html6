@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>私のプロフィール</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <h1>私のプロフィール</h1>
+    </header>
+
+    <main class="main-content">
+        <h2>山岸</h2>
+        <p>はじめまして。現在私は、JavaScriptを学んでいます</p>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2025 Tanaka Taro</p>
+    </footer>
+
+</body>
+</html>
+
+
+
+cssの構成
+
+.site-header {
+    background-color: lightblue;
+    color: white;
+    padding: 20px;
+}
+
+.main-content {
+    background-color: white;
+    padding: 20px;
+}
+
+.site-footer {
+    background-color: lightgray;
+    color: gray;
+    padding: 10px;
+    text-align: center;
+}

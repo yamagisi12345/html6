@@ -1,0 +1,21 @@
+No3 課題6
+
+h1 {
+  color: blue;
+  font-size: 32px;
+  }
+
+
+  課題7
+  .box {
+    font-size: 16px;
+    background-color: #eeeeee;
+  }
+
+  課題８
+  .spaced-box {
+    padding: 20px;
+    margin: 30px;
+    background-color: lightyellow;
+  }
+

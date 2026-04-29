@@ -1,0 +1,75 @@
+No6
+function praisePet(name) {
+  console.log(name + "はとてもかわいいです！");
+}
+
+praisePet("ポチ");
+praisePet("タマ");
+
+
+No7
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>クリックイベントの練習</title>
+</head>
+<body>
+
+    <button id="btn">ボタン</button>
+    <p id="message">書き換わります</p>
+
+    <script>
+        const button = document.getElementById('btn');
+        const message = document.getElementById('message');
+
+        button.addEventListener('click', () =  {
+           message.textContent = "クリックされました！"
+        });
+    </script>
+
+</body>
+</html>
+
+No8
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animal Sounds</title>
+</head>
+<body>
+
+    <button class="animalBtn" data-animal="dog">Dog</button>
+    <button class="animalBtn" data-animal="cat">Cat</button>
+    <button class="animalBtn" data-animal="bird">Bird</button>
+    <button class="animalBtn" data-animal="frog">Frog</button>
+
+    <p id="result">"鳴きます"</p>
+
+    <script>
+        const buttons = document.querySelectorAll('.animalBtn');
+        const result = document.getElementById('result');
+
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                const animal = button.getAttribute('data-animal');
+                let sound = "";
+
+                if (animal === 'dog') {
+                    sound = "わんわん";
+                } else if (animal === 'cat') {
+                    sound = "にゃーん";
+                } else if (animal === 'bird') {
+                    sound = "ぴよぴよ";
+                } else if (animal === 'frog') {
+                    sound = "げろげろ";
+                }
+
+                result.textContent = sound;
+            });
+        });
+    </script>
+
+</body>
+</html>

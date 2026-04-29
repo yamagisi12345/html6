@@ -1,0 +1,70 @@
+課題6     ファイル名 intro.html
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>課題７</title>
+  </head>
+  <body>
+    <h1>名前と趣味</h1>
+    <p>私の名前は、山岸です。
+      <br>趣味はゲームです。</p>
+  </body>
+</html>
+
+課題7     ファイル名 lists.html
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>リスト</title>
+  </head>
+  <body>
+    <h1>リスト</h1>
+    <ul>
+      <li>ゲーム</li>
+      <li>読書</li>
+      <li>運動</li>
+    </ul>
+  </body>
+</html>
+
+
+
+課題８    ファイル名 simple-page.html
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta checked="UTF-8">
+    <title>流用しました。</title>
+  </head>
+  <body>
+    <h1>富士山</h1>
+    <p><img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/MtFuji_FujiCity.jpg" art="富士山" width="300"/>
+    <br><a href="https://www.yahoo.co.jp"> YahooのURLを使用しました。 </a></p>
+  </body>
+</html>
+
+
+
+No3 課題6
+
+h1 {
+  color: blue;
+  font-size: 32px;
+  }
+
+
+  課題7
+  .box {
+    font-size: 16px;
+    background-color: #eeeeee;
+  }
+
+  課題８
+  .spaced-box {
+    padding: 20px;
+    margin: 30px;
+    background-color: lightyellow;
+  }
+
